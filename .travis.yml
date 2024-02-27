@@ -1,0 +1,11 @@
+language: minimal
+
+# Indica que no se requiere ninguna instalación
+install: true
+
+# Definimos los scripts a ejecutar
+script:
+- htmlhint index.html
+- csslint style.css
+- npm test
+  # Aquí podrías añadir comandos para validar el HTML o CSS, por ejemplo con HTMLHint o CSSLint
